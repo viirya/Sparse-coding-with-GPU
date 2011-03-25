@@ -1,0 +1,59 @@
+====================================================
+Author: Anand Madhavan
+Email: manand@stanford.edu
+Stanford University
+====================================================
+
+====================================================
+How to run:
+====================================================
+Edit Makefile and update CUDA_INC and CUDA_LIB to your machine's CUDA locations for the include and library files.
+
+Run:
+$ ./paper_demo.sh (short version)
+or
+$ ./paper.sh (longer version)
+
+All directories and files, including 'natural' images required as inputs and temporary outputs are checked in, so if you've checked the source code out, should not have to change anything. 
+
+For debugging purposes though: depends on ../../images directory. Also depends on a ./tmp directory existing.
+
+====================================================
+Description:
+====================================================
+Above trains our model on 'natural' images. We iteratively train for the 
+coefficients (keeping the basis fixed) and the basis (keeping the coefficients)
+fixed. Each of these steps exploits the GPU. The coefficients portion 
+uses the parallelized coordinate descent algorithm and uses kernel CUDA code.
+The basis computation portion uses CuBLAS libraries for matrix algebra.
+
+
+====================================================
+Description of arguments:
+====================================================
+n:  		number of basis vectors
+k: 		is number of dimensions in each vector
+mb: 		is the number of example patches per batch
+nb: 		is the number of batches
+nepoch:		number iterations to loop over all the batches 
+eta: 		used in the projected gradient descent (controls descent step size)
+nbasis_iters:	max iterations before exiting basis computation section
+beta:		used in the objective function
+runwhat:	'natural' (used for other experiments as well, but use this for paper)
+basisdir:       output directory for storing basis that were computed
+
+====================================================
+Code details:
+====================================================
+main.cc: run_expt_together
+ main function that runs the experiments on the natural images. 
+ loops over the coefficient computation and the basis computation iteratively.
+
+l1ls_coord_descent.cu: l1ls_coord_descent_cu_basic
+ function that computes the coefficients using the parallelized l1-regularized 
+least squares using coordinate descent. This uses kernel CUDA code.
+
+proj_grad_descent.cu: proj_grad_descent_cu_basic
+ function that computes the basis using fixed coefficients and uses CuBLAS.
+
+

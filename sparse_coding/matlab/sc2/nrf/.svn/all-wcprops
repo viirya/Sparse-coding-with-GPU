@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf
+END
+impure.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/impure.c
+END
+nrutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/nrutil.h
+END
+frprmn.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/frprmn.c
+END
+linmin.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/linmin.c
+END
+makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/makefile.linux
+END
+mnbrak.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/mnbrak.c
+END
+brent.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/brent.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/README
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/makefile
+END
+makefile.win32
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/makefile.win32
+END
+nrutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/nrutil.c
+END
+getreent.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/sparse_coding/matlab/sc2/nrf/getreent.c
+END
